@@ -4,7 +4,7 @@ import requests
 def ppx_url():
     url = input('请输入视频链接:')
     # https://h5.pipix.com/s/hukXsy/
-    data = requests.get('这里填写你的接口地址例如：https://domain.com/video/?url=' + url)
+    data = requests.get('https://jyiwbb.ml/video/?url=' + url)
     video_title = data.json()['data']['title']
     video_cover = data.json()['data']['cover']
     video_url =  data.json()['data']['url']
